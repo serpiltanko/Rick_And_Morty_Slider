@@ -1,0 +1,130 @@
+body {
+    padding: 50px;
+}
+
+h3 {
+
+    padding-top: 150px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+
+.splide {
+    width: 900px;
+    height: 600px;
+    margin-left: 780px;
+    margin-top: 50px;
+    
+
+}
+
+
+.splide__track {
+    width: 900px;
+    height: 600px;
+   
+ 
+}
+
+
+.splide__arrow img {
+    margin-bottom: 280px;
+    fill: #000;
+    height: 1.2em;
+    width: 1.2em;
+    z-index: 1;
+  
+}
+
+.splide__arrow::before {
+    margin-top: -140px;
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+
+}
+
+.character-card {
+
+    position: relative;
+
+}
+
+.character-card img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.character-info {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 13%;
+    background-color: rgb(56,56,56,0.9);
+    /* Opak siyah arka plan */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 10px;
+    display: flex;
+}
+
+.character-status {
+    font-size: 10px;
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+    overflow:visible;
+}
+
+
+.character-status::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.character-status[data-status="Alive"]::before {
+    background-color: green;
+}
+
+.character-status[data-status="Dead"]::before {
+    background-color: red;
+}
+
+.character-status[data-status="unknown"]::before {
+    background-color: gray;
+}
+
+.red-circle{
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 5px;
+}
+
+.green-circle{
+    border-radius: 50%;
+    background-color: green;
+    margin-right: 5px;
+}
